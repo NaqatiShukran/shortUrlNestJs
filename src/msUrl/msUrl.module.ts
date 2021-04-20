@@ -1,9 +1,9 @@
 import { Module } from "@nestjs/common";
 import { MongooseModule } from "@nestjs/mongoose"
 
-import { UrlController } from "./shortUrl.controller";
-import { UrlSchema } from "./shortUrl.model";
-import { UrlService } from "./shortUrl.service";
+import { UrlController } from "./msUrl.controller";
+import { UrlSchema } from "./msUrl.model";
+import { UrlService } from "./msUrl.service";
 
 
 @Module({
