@@ -7,7 +7,7 @@ interface IUrlHash {
 }
 
 interface IUrlObject{
-    url: Object
+    urlOb: Object
 }
 
 @Controller('url')
@@ -23,8 +23,9 @@ export class UrlController {
         try{
             // console.log("MS Controller getShortUrl");
             // console.log("This is url in ms" + Url);
-            const Url= await this.UrlService.getShortUrl(hash.urlHash)            
-            return {url: Url};
+            const Url= await this.UrlService.getShortUrl(hash.urlHash) 
+            // console.log("This is url in ms" + Url);        
+            return {urlOb:Url};
         }
         catch(error){
         }
