@@ -6,6 +6,8 @@ package app;
 
 service UrlController {
     rpc GetShortUrl (UrlHash) returns (Url){}
+
+    rpc InsertUrl (OriginalUrl) returns (Url){}
 }
 
 message UrlHash {
@@ -21,4 +23,8 @@ message UrlObject {
 
 message Url{
     UrlObject urlOb = 1;
+}
+
+message OriginalUrl{
+    string originalUrl = 1;
 }
